@@ -33,12 +33,15 @@ class UtilsDisplay {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {}
                 })
+            /*
                 .setNeutralButton(btnNeutral, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         libraryPreferences.setAppUpdaterShow(false);
                     }
-                }).create();
+                })
+                */
+            .create();
     }
 
     static AlertDialog showUpdateNotAvailableDialog(final Context context, String title, String content) {
