@@ -16,11 +16,12 @@ class LibraryPreferences {
         this.editor = sharedPreferences.edit();
     }
 
-    /*
     public Boolean getAppUpdaterShow() {
-        return sharedPreferences.getBoolean(KeyAppUpdaterShow, true);
+        return true;
+//        return sharedPreferences.getBoolean(KeyAppUpdaterShow, true);
     }
 
+    /*
     public void setAppUpdaterShow(Boolean res) {
         editor.putBoolean(KeyAppUpdaterShow, res);
         editor.commit();
