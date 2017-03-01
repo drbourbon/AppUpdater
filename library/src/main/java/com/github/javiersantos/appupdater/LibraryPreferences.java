@@ -8,7 +8,7 @@ class LibraryPreferences {
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
 
-    static final String KeyAppUpdaterShow = "prefAppUpdaterShow";
+    //static final String KeyAppUpdaterShow = "prefAppUpdaterShow";
     static final String KeySuccessfulChecks = "prefSuccessfulChecks";
 
     public LibraryPreferences(Context context) {
@@ -16,6 +16,7 @@ class LibraryPreferences {
         this.editor = sharedPreferences.edit();
     }
 
+    /*
     public Boolean getAppUpdaterShow() {
         return sharedPreferences.getBoolean(KeyAppUpdaterShow, true);
     }
@@ -24,6 +25,7 @@ class LibraryPreferences {
         editor.putBoolean(KeyAppUpdaterShow, res);
         editor.commit();
     }
+    */
 
     public Integer getSuccessfulChecks() {
         return sharedPreferences.getInt(KeySuccessfulChecks, 0);
